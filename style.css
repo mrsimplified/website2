@@ -20,9 +20,10 @@ body {
 }
 
 .pagecontainer {
-  max-width: 1186px;
+  max-width: 1200px;
   margin-inline: auto;
   padding-inline: 20px;
+  overflow: hidden;
 }
 
 .con-container {
@@ -259,6 +260,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .company .con-container .logos img {
@@ -266,7 +268,7 @@ p {
   display: inline-block;
 }
 
-.company .con-container .logos [src="/asset/asset 8.svg"] {
+.company .con-container .logos [src="./asset/asset 8.svg"] {
   height: 32px;
 }
 
@@ -603,3 +605,226 @@ h4 {
 .h-h4 {
   color: var(--primary);
 }
+
+.toogle i {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.175rem;
+  }
+
+  .con-container {
+    padding: 1.5rem 0;
+  }
+
+  .top-banner .banner-text a {
+    font-size: 0.9rem;
+  }
+
+  .hero .con-container {
+    flex-direction: column-reverse;
+  }
+
+  .hero .con-container .img {
+    flex-basis: 330px;
+    margin-bottom: 2rem;
+  }
+
+  .hero .con-container .text {
+    flex-basis: 255px;
+    text-align: center;
+  }
+
+  .hero .con-container .text a {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .company .con-container .logos {
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .company .con-container .logos img {
+    height: 46px;
+    display: inline-block;
+  }
+  .company .con-container .logos [src="./asset/asset 8.svg"] {
+    width: 170px;
+  }
+
+  .research .pagecontainer {
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .research .pagecontainer .text {
+    flex-basis: 110px;
+  }
+
+  .research .pagecontainer .con-container {
+    justify-content: center;
+  }
+
+  .research .pagecontainer .con-container .content {
+    margin-bottom: 3rem;
+  }
+
+  .features .feature {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .features .feature .img {
+    margin: 0;
+  }
+
+  .features .feature .con {
+    flex-basis: 415px;
+  }
+  .features .feature .text {
+    text-align: center;
+  }
+
+  .features .feature .text .profile {
+    justify-content: center;
+  }
+
+  .features .feature2 {
+    flex-direction: column-reverse;
+  }
+
+  .features .feature2 .text {
+    flex-basis: 425px;
+  }
+
+  .features .feature2 .img-r {
+    flex-basis: 425px;
+  }
+
+  .platform .text {
+    min-height: 100px;
+  }
+
+  .platform .pagecontainer .img {
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .platform .pagecontainer .img .img-con {
+    width: 90%;
+  }
+
+  .platform .pagecontainer .img .img-con img {
+    width: 100%;
+  }
+
+  .service .pagecontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .service .pagecontainer .content {
+    flex-basis: 400px;
+  }
+
+  .service .pagecontainer .text {
+    flex-basis: 450px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .service .pagecontainer .text .list-con {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service .pagecontainer .text .r-btn {
+    width: 100%;
+  }
+
+  .today .pagecontainer {
+    margin: 3rem auto;
+  }
+
+  .today .pagecontainer a {
+    width: 100%;
+  }
+
+  .footer .pagecontainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .copyright > .pagecontainer > h4 {
+    font-size: 14px;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar nav .link {
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+
+  .navbar nav .link ul {
+    padding: 1.5rem;
+    display: none;
+    transition: all 0.3s;
+  }
+
+  .navbar nav .link ul.active {
+    display: block;
+  }
+
+  .navbar nav .link ul > .nav-item {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .navbar nav .link ul > .item5 {
+    margin-bottom: 0.5rem;
+  }
+  .navbar .pagecontainer {
+    position: relative;
+  }
+
+  .toogle {
+    position: absolute;
+    right: 25px;
+    top: 37px;
+  }
+
+  .toogle i {
+    font-size: 1.3rem;
+    display: block;
+  }
+}
+
