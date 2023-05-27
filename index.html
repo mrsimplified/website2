@@ -37,8 +37,11 @@
               <a href="" class="tester">Become a tester</a>
             </div>
           </div>
+          <div class="toogle" id="nav-toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
           <div class="link">
-            <ul>
+            <ul id="link-con" class="active">
               <li class="nav-item item1">
                 <a href="" class="nav-link">Product</a>
                 <i class="fa-solid fa-caret-down"></i>
@@ -240,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="feature">
+        <div class="feature feature2">
           <div class="text con">
             <h4>Optimisation for</h4>
             <h2>Marketers</h2>
@@ -425,5 +428,14 @@
         </h4>
       </div>
     </section>
+
+    <script>
+      const toggleButton = document.getElementById("nav-toggle");
+      const linkCon = document.getElementById("link-con");
+
+      toggleButton.addEventListener("click", () => {
+        linkCon.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
